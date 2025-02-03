@@ -70,11 +70,6 @@ footer .bi { /* Bootstrap icons */
   font-size: 1.5em;
 }
 
-footer li {
-  border: none;
-}
-
-
 /*------------------------------------------------- BEGIN GENERAL CLASSES AND IDS--------------------------------------------------------*/
 /*------------------------------------------------ Responsive with Mobile Design Priority -----------------------------------------------*/
 
@@ -102,6 +97,10 @@ header .site-title {
 .dates {
   border: hidden;
   font-weight: 300;
+}
+
+#socials li {
+  border: hidden;
 }
 
 /*-------------------------------------------------------- END GENERAL CLASSES ----------------------------------------------------------*/
