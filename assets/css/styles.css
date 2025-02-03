@@ -77,12 +77,6 @@ footer .bi { /* Bootstrap icons */
   display: none;
 }
 
-.flex-centered {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
 header .site-title {
   text-align: center;
 }
@@ -107,6 +101,7 @@ header .site-title {
 
 #socials {
   list-style: none;
+  text-align: center;
 }
 
 /*-------------------------------------------------------- END GENERAL CLASSES ----------------------------------------------------------*/
