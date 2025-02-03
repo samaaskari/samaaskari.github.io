@@ -275,6 +275,10 @@ header .site-title {
   background: none;
 }
 
+#edu-list .disabled {
+  color: #CCCCCC;
+}
+
 #edu-list li {
   border: none;
 }
