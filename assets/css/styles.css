@@ -1,0 +1,347 @@
+/*------------------------------------------------------------ FONTS ---------------------------------------------------------------------*/
+
+@font-face {
+  font-family: Lato;
+  src: url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/*------------------------------------------------------------ GLOBAL STYLING ------------------------------------------------------------*/
+/*
+#3C2393 - purple
+#4DD0E1 - teal
+#FFE082 - yellow
+*/
+
+* { /* Reset CSS */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#body {
+  font-family: "Lato", serif;
+  font-weight: 300;
+}
+
+section {
+  margin: 2em 0;
+}
+
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  margin-top: 0.5em;
+  font-weight: 300;
+}
+
+section h1 {
+  font-size: 2em;
+}
+
+section h2 {
+  font-size: 1.5em;
+}
+
+section h3 {
+  font-size: 1.25em;
+}
+
+section h4 {
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 1.25em;
+}
+
+footer h2 {
+  font-size: 1em;
+}
+
+footer a, footer p {
+  font-size: 0.75em;
+}
+
+footer .bi { /* Bootstrap icons */
+  color:#4DD0E1;
+  font-size: 1em;
+}
+
+
+/*------------------------------------------------- BEGIN GENERAL CLASSES AND IDS--------------------------------------------------------*/
+/*------------------------------------------------ Responsive with Mobile Design Priority -----------------------------------------------*/
+
+.hidden {
+  display: none;
+}
+
+header .site-title {
+  text-align: center;
+}
+
+.site-title h1 {
+  font-weight: 300;
+}
+
+.site-title h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.dates {
+  border: hidden;
+  font-weight: 300;
+}
+
+/*-------------------------------------------------------- END GENERAL CLASSES ----------------------------------------------------------*/
+/*------------------------------------------------------------ BEGIN NAVBAR -------------------------------------------------------------*/
+/*------------------------------------------------ Responsive with Mobile Design Priority -----------------------------------------------*/
+
+/* <nav class="primary"> --- Navbar container settings */
+.main-nav {
+  background-color: #FFFFFF;  /* Solid background color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Set height to a known quantity so we can start the header just below it */
+  position: relative;
+  z-index: 100; /* Ensures navbar stays on top of all other content */
+  color: #000000;
+  padding: 1rem;
+}
+
+/* Settings for links within the navbar container */
+.main-nav a {
+  text-decoration: none; /* Removes hyperlink underline */
+  padding: 1em; /* Space between the edge of the "a" element and the link text */
+  color: #000000;
+  transition: color 0.3s; /* Hover effect to change navbar link color */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Link hover settings */
+.main-nav a:hover {
+  color: #4DD0E1; /* Text color */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main-nav-links {
+  display: none; /* Hidden by default for mobile */
+  flex-direction: column; /* Stack links on mobile */
+  list-style: none;
+  padding: 1rem;
+  background-color: inherit;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+}
+
+.main-nav-links.show {
+  display: flex;
+}
+
+.main-nav-links li {
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*-------------------------------------------------------- END NAVBAR STYLES ------------------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN ABOUT SECTION STYLES ---------------------------------------------------*/
+#about figure {
+  text-align: right;
+}
+
+#about img {
+  max-width: 450px;
+}
+
+.bio {
+  align-content: center;
+  color: #000000;
+}
+
+.bio a {
+  color: inherit;
+  transition: color 0.3s; /* Hover effect to change navbar link color */
+}
+
+.bio a:hover {
+  color: #4DD0E1; /* Text color */
+}
+
+.bio h1 {
+  color: #3C2393;
+}
+/*-------------------------------------------------------- END ABOUT SECTION STYLES -----------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN INTERESTS SECTION STYLES -----------------------------------------------*/
+#interests {
+  background: none;
+}
+
+#career-interests li {
+  border: none;
+  text-align: center;
+}
+
+.material-symbols-outlined {
+  color: #4DD0E1;
+}
+
+.bi { /* Bootstrap icons */
+  color: #3C2393;
+}
+/*-------------------------------------------------------- END INTERESTS SECTION STYLES -------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN PROJECTS SECTION STYLES ------------------------------------------------*/
+#projects {
+  background: none;
+}
+
+#project-list { 
+  list-style: none;
+  text-align: center;
+  counter-reset: num; 
+} 
+
+#project-list li {
+  border: none;
+  counter-increment: num;
+}
+
+#project-list li::before {
+  content: counter(num);
+  background-color: #4DD0E1;
+  padding: 0.25em 0.55em;
+  border-radius: 1em;
+  font-size: 1.75em;
+} 
+/*-------------------------------------------------------- END PROJECTS SECTION STYLES --------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN EXPERIENCE SECTION STYLES ----------------------------------------------*/
+#experience {
+  background: none;
+}
+
+.workplace {
+  font-style: italic;
+  text-align: center;
+}
+
+.work-experience {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.work-history .list-group-item ul {
+  margin-bottom: 2em;
+}
+
+.job-title {
+  color: #3C2393;
+  font-weight: normal;
+}
+
+.job-context {
+  font-style: italic;
+}
+
+#current-job {
+  background-color: #3C239329;
+  color: #000000;
+  border: none;
+}
+/*-------------------------------------------------------- END EXPERIENCE SECTION STYLES ------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN EDUCATION SECTION STYLES -----------------------------------------------*/
+#education {
+  background: none;
+}
+
+#edu-list li {
+  border: none;
+}
+
+.edu-item-heading {
+  display: flex;
+  justify-content: space-between;
+}
+/*-------------------------------------------------------- END EDUCATION SECTION STYLES -------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN CERTIFICATIONS SECTION STYLES ------------------------------------------*/
+#certifications li {
+  border: 1px solid #EEEEEE;
+  border-radius: 0;
+}
+
+.cert-badge {
+  max-width: 180px;
+}
+/*-------------------------------------------------------- END CERTIFICATIONS ID STYLES -------------------------------------------------*/
+/*-------------------------------------------------------- BEGIN SKILLS SECTION STYLES --------------------------------------------------*/
+#skills {
+  background: none;
+}
+
+#skills-list li {
+  border: 1px dashed #DDDDDD;
+  border-radius: 0;
+  text-align: center;
+}
+/*-------------------------------------------------------- END SKILLS SECTION STYLES ----------------------------------------------------*/
+
+/*------------------------------ FOOTER (START) ------------------------------*/
+footer{
+  background-color: #3C2393; /* Purple */
+  color: #FFFFFF;
+}
+/*------------------------------ FOOTER STYLING (END) ------------------------------*/
+/*------------------------------ COMPTIA BADGES (START) ------------------------------*/
+.compTIABadge {
+  background: none;
+  width:240px;
+  height:240px;
+}
+/*------------------------------ COMPTIA BADGES (END) ------------------------------*/
+/* ------------------------------------------------------- BEGIN DESKTOP CSS STYLES ---------------------------------------------------- */
+@media (min-width: 1024px) {
+  /*------------------------- NAVBAR -------------------------*/
+  .main-nav {
+    flex-direction:column;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide link and menu toggle on desktop */
+  }
+
+  .main-nav-links {
+    display: flex; /* Show links in a row */
+    flex-direction: row;
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+
+  .main-nav-links li {
+    text-align: left;
+    width: auto;
+    padding: 0;
+  }
+
+  /*------------------------- BODY -------------------------*/
+
+}
+/* ------------------------------------------------------- END DESKTOP CSS STYLES ------------------------------------------------------ */
