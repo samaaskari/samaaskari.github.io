@@ -70,6 +70,10 @@ footer .bi { /* Bootstrap icons */
   font-size: 1.5em;
 }
 
+footer li {
+  border: none;
+}
+
 
 /*------------------------------------------------- BEGIN GENERAL CLASSES AND IDS--------------------------------------------------------*/
 /*------------------------------------------------ Responsive with Mobile Design Priority -----------------------------------------------*/
