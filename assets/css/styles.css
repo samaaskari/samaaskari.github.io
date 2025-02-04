@@ -290,8 +290,8 @@ header .site-title {
 /*-------------------------------------------------------- END EDUCATION SECTION STYLES -------------------------------------------------*/
 /*-------------------------------------------------------- BEGIN CERTIFICATIONS SECTION STYLES ------------------------------------------*/
 #certifications li {
-  border: 1px solid #EEEEEE;
-  border-radius: 0;
+  border: none;
+  text-align: center;
 }
 
 .cert-badge {
